@@ -13,7 +13,7 @@ class App extends Component {
     showRightNav: true,
   }
 
-  onToggleShowLeftNavBar = () => {
+  onToggleShowLeftNavbar = () => {
     this.setState(prevState => ({showLeftNav: !prevState.showLeftNav}))
   }
 
@@ -21,7 +21,7 @@ class App extends Component {
     this.setState(prevState => ({showContent: !prevState.showContent}))
   }
 
-  onToggleShowRightNavBar = () => {
+  onToggleShowRightNavbar = () => {
     this.setState(prevState => ({showRightNav: !prevState.showRightNav}))
   }
 
@@ -33,9 +33,9 @@ class App extends Component {
           showContent,
           showLeftNav,
           showRightNav,
-          onToggleShowLeftNavBar: this.onToggleShowLeftNavBar,
+          onToggleShowLeftNavBar: this.onToggleShowLeftNavbar,
           onToggleShowContent: this.onToggleShowContent,
-          onToggleShowRightNavBar: this.onToggleShowRightNavBar,
+          onToggleShowRightNavBar: this.onToggleShowRightNavbar,
         }}
       >
         <ConfigurationController />
